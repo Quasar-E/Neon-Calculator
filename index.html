@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Functional and beautiful calculator in neon style. Has all basic functions, history and memory. Get your math done in a beautiful way!"
+    />
+
+    <!-- icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/site.webmanifest" />
+
+    <title>Neon Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="veiwport">
+      <main class="container">
+        <div class="calculator">
+          <section class="section--history">
+            <button class="btn--tab btn--history">HISTORY</button>
+            <button class="btn--tab btn--memory">MEMORY</button>
+
+            <div class="tab tab--history">
+              <h2 class="tab-h2">HISTORY</h2>
+
+              <div class="box history-box">
+                <div class="history-el">
+                  <p class="expression-line">123 + 45 =</p>
+                  <p class="result-line">168</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab tab--memory disabled">
+              <h2 class="tab-h2">MEMORY</h2>
+
+              <div class="box memory-box">
+                <div class="memory-el el-0">
+                  <p class="memory-line">12345677</p>
+
+                  <div class="box-btn-memory">
+                    <button class="btn-memory btn-memory-MC">MC</button>
+                    <button class="btn-memory btn-memory-MPlus">M+</button>
+                    <button class="btn-memory btn-memory-MMinus">M-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="delete-box">
+              <button aria-label="Up" class="btn btn--close-history disabled">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+
+              <button aria-label="Delete" class="btn btn--del btn--del-history">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+
+              <button
+                aria-label="Delete"
+                class="btn btn--del btn--del-memory disabled"
+              >
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </section>
+
+          <section class="section--input">
+            <p class="result-field">123456789012345</p>
+            <p class="input-field">123456789012345</p>
+          </section>
+
+          <section class="section--memory">
+            <button class="btn btn--MC" disabled>MC</button>
+            <button class="btn btn--MR" disabled>MR</button>
+            <button class="btn btn--MPlus">M+</button>
+            <button class="btn btn--MMinus">M-</button>
+            <button class="btn btn--MS">MS</button>
+            <button class="btn btn--HM disabled">HM</button>
+          </section>
+
+          <section class="section--numbers">
+            <button class="btn btn--1">1</button>
+            <button class="btn btn--2">2</button>
+            <button class="btn btn--3">3</button>
+            <button class="btn btn--4">4</button>
+            <button class="btn btn--5">5</button>
+            <button class="btn btn--6">6</button>
+            <button class="btn btn--7">7</button>
+            <button class="btn btn--8">8</button>
+            <button class="btn btn--9">9</button>
+            <button class="btn btn--dot">.</button>
+            <button class="btn btn--0">0</button>
+            <button class="btn btn--negate">+/-</button>
+          </section>
+
+          <section class="section--functions">
+            <button class="btn btn--delete">&lArr;</button>
+            <button class="btn btn--clear">C</button>
+            <button class="btn btn--multiply">*</button>
+            <button class="btn btn--div">÷</button>
+            <button class="btn btn--plus">+</button>
+            <button class="btn btn--minus">-</button>
+            <button class="btn btn--percent">%</button>
+            <button class="btn btn--equals">=</button>
+          </section>
+        </div>
+      </main>
+
+      <a
+        href="https://github.com/Quasar-E/Neon-Calculator.git"
+        class="icon--git"
+        ><ion-icon name="logo-github"></ion-icon
+      ></a>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
