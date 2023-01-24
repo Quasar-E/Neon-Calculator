@@ -209,7 +209,7 @@ boxMemory.addEventListener('click', e => {
   if (!e.target.classList.contains('btn-memory')) return;
 
   // Get parent element with el-*index* class
-  const parentEl = e.target.parentNode.parentNode;
+  const parentEl = e.target.closest('.memory-el');
   //Get index
   const index = Number(parentEl.classList.value.split('-').at(-1));
 
